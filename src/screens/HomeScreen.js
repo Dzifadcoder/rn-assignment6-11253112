@@ -5,13 +5,14 @@ import { getCartItems, storeCartItems } from '../utils/storage';
 
 const HomeScreen = ({ navigation }) => {
   const [products, setProducts] = useState([
-    { id: '1', name: 'Reversible Angora Cardigan', price: '$120', image: require('../../assets/dress1.png') },
-    { id: '2', name: 'Recycle Boucle Knit Cardigan Pink', price: '$120', image: require('../../assets/dress2.png') },
-    { id: '3', name: 'Organic Cotton Striped Dress', price: '$80', image: require('../../assets/dress3.png') },
-    { id: '4', name: 'Silk Satin Evening Gown', price: '$350', image: require('../../assets/dress4.png') },
-    { id: '5', name: 'Vintage Floral Print Dress', price: '$95', image: require('../../assets/dress5.png') },
-    { id: '6', name: 'Linen Summer Dress', price: '$75', image: require('../../assets/dress6.png') },
-    { id: '7', name: 'Denim Jacket Dress', price: '$110', image: require('../../assets/dress7.png') },
+    { id: '1', title: 'Office Wear', name: 'Reversible Angora Cardigan', price: '$120', image: require('../../assets/dress1.png') },
+    { id: '2', title: 'Black', name: 'Reversible Angora Cardigan', price: '$120', image: require('../../assets/dress2.png') },
+    { id: '3', title: 'Church Wear', name: 'Reversible Angora Cardigan', price: '$120', image: require('../../assets/dress3.png') },
+    { id: '4', title: 'Lamerei', name: 'Reversible Angora Cardigan', price: '$120', image: require('../../assets/dress4.png') },
+    { id: '5', title: '21WN', name: 'Reversible Angora Cardigan', price: '$120', image: require('../../assets/dress5.png') },
+    { id: '6', title: 'Lopo', name: 'Reversible Angora Cardigan', price: '$120', image: require('../../assets/dress6.png') },
+    { id: '7', title: '21WN', name: 'Reversible Angora Cardigan', price: '$120', image: require('../../assets/dress7.png') },
+    { id: '8', title: 'Lame', name: 'Reversible Angora Cardigan', price: '$120', image: require('../../assets/dress3.png') },
   ]);
 
   const [cartItems, setCartItems] = useState([]);
@@ -59,7 +60,7 @@ const HomeScreen = ({ navigation }) => {
           </TouchableOpacity>
         </View>
       </View>
-      <ProductList products={products} addToCart={addToCart} />
+      <ProductList products={products} addToCart={addToCart}  />
     </View>
   );
 };
