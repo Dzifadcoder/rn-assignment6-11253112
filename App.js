@@ -10,7 +10,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Our Story' }} />
+        <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Cart" component={CartScreen} options={{ title: 'Checkout' }} />
       </Stack.Navigator>
     </NavigationContainer>
